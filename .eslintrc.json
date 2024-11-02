@@ -1,6 +1,7 @@
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
 {
   "extends": [
-    "next/core-web-vitals", 
+    "next/core-web-vitals",
     "next/typescript",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended"
