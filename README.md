@@ -26,7 +26,7 @@ The backend code was modified for enhanced error handling. Previously, errors we
 
 Clone the repository:
 
-git clone <repository-url>
+git clone <https://github.com/Ifure/GP_hiring_task_fe.git>
 
 ## Install dependencies:
 
@@ -36,11 +36,11 @@ git clone <repository-url>
 
 - yarn dev
 
+Open http://localhost:3000 in your browser to view the application.
+
 ## Run test
 
 - yarn test
-
-Open http://localhost:3000 in your browser to view the application.
 
 ## Project Overview
 
