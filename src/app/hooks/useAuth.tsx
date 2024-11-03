@@ -15,14 +15,15 @@ interface IJwtPayload extends JwtPayload {
 
 const AuthContext = createContext({});
 const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<any>(localStorage.getItem("jwt") || null);
+  // const [user, setUser] = useState<any>(localStorage.getItem("jwt") || null);
   const router = useRouter();
 
+  const [user, setUser] = useState<any>(null);
+
   useEffect(() => {
-    const token = localStorage.getItem("jwt");
-    if (token !== "null") {
-      const validatedToken = validateToken(token as string);
-      setUser(validatedToken);
+    const storedToken = localStorage.getItem("jwt");
+    if (storedToken) {
+      setUser(storedToken);
     }
   }, []);
 
