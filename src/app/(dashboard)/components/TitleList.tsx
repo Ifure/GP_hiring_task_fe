@@ -9,7 +9,6 @@ import { useTitleContext } from "@/contexts/TitleContextProvider";
 import { ITitleData } from "@/api/title/api.title";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
-import { useAuth } from "@/app/hooks/useAuth";
 
 export default function TitleList() {
   const { control, handleSubmit } = useForm({
