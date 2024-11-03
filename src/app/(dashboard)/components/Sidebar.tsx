@@ -112,11 +112,11 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-
       <div className="hidden md:block" data-testid="logout-div">
         <Button
           title="LOGOUT"
-          bgColor="#E3735E"
+          textColor="#FFF"
+          bgColor="#FF2400"
           onClick={handleLogout}
           data-testid="logout-button"
         />
